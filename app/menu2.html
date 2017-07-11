@@ -49,13 +49,13 @@
           </div>
           <div class="col-xs-9 col-xs-offset-1" ng-repeat = "comment in comments | orderBy: ['-date', 'date', '-author', 'author', '-rating', 'rating']">
             <input type="text" name="">
-            <blockquote>{{dish.comments.comment}}
-                <footer>
-                  <p>{{dish.comments.rating}}</p>
-                  <p>{{dish.comments.author}}</p>
-                  <p>{{dish.comments.date | date:"yyyy" + "MM" + "dd" + "EEE" + "HH" + "mm" + "ss" + "Z"}}</p>
-                </footer>
-            </blockquote>
+            <blockquote>{{comments.comment}} 
+              <footer> 
+              <p>{{comments.rating}}</p> 
+              <p>{{comments.author}}</p> 
+              <p>{{comments.date | date:"yyyy" + "MM" + "dd" + "EEE" + "HH" + "mm" + "ss" + "Z"}}</p> 
+              </footer> 
+            </blockquote> 
          </div>
         </div>
       </div>
